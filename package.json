@@ -1,0 +1,24 @@
+{
+  "name": "mim",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://github.com/frontwise/mim-graph",
+  "devDependencies": {
+    "node-sass": "^4.5.0",
+    "react-scripts": "0.9.4"
+  },
+  "dependencies": {
+    "d3": "^4.7.1",
+    "react": "^15.4.2",
+    "react-custom-scrollbars": "^4.1.1",
+    "react-dom": "^15.4.2",
+    "react-transition-group": "^1.1.3"
+  },
+  "scripts": {
+    "start": "REACT_APP_IMAGE_HOST='/images' react-scripts start",
+    "build": "REACT_APP_IMAGE_HOST='/images' react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "scss": "node-sass -w src/index.scss src/index.css"
+  }
+}

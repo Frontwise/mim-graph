@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <title>Music in Movement | Graph</title>
+
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        background-color: #000;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="graph" class="mim-graph" data-height="1080" data-node-id="composer-louis-andriessen"></div>
+
+
+    <script>
+    // lister for change, and change hash
+    window.addEventListener('MIM_GRAPH_ACTIVE_NODE', function(e){
+      if (e.detail && e.detail.nodeId){
+        document.location.hash = '#' + encodeURIComponent(e.detail.nodeId);
+      } else{
+         document.location.hash = "";
+      }
+    });
+
+    // if hash is set, change the data-node-id of the main graph holder.
+    if(document.location.hash){
+      document.getElementById('graph').setAttribute('data-node-id', document.location.hash.substring(1));
+    }
+    </script>
+
+  </body>
+</html>

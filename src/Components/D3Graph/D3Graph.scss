@@ -1,0 +1,72 @@
+.D3Graph{
+  max-height: 100%;
+  .d3-links {
+    g{
+      line {
+        stroke: #99a;
+        stroke-opacity: 0.3;
+      }
+      &.hover{
+        line{
+          stroke-opacity: 0.8;
+        }
+      }
+
+      circle{
+        fill: #777;
+        cursor: pointer;
+        &:hover{
+          fill: #000;
+          stroke: #000;
+          stroke-width: 2px;
+        }
+      }
+    }
+  }
+
+ .d3-nodes {
+
+    g{
+      cursor: pointer;
+
+    }
+
+    text{
+      fill: white;
+    }
+
+
+
+    .contents{
+
+      transition: opacity 0.2 ease-out;
+      .selector{
+        display: none;
+      }
+
+      text{
+        font-weight: bold;
+      }
+
+      &.active {
+        .selector{
+          display: block;
+        }
+      }
+    }
+  }
+
+  .d3-info{
+    box-shadow: 0 0 10px black;
+    text{
+      font-weight: bold;
+      fill: #bbb;
+
+      .description{
+        fill: #fff;
+      }
+    }
+
+  }
+
+}

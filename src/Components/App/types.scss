@@ -1,0 +1,86 @@
+$mim-dark: #000000;
+
+$alt-factor: 10;
+
+$color-audio: lighten($mim-dark,12);
+$color-composer: lighten($mim-dark,4);
+$color-composition: lighten($mim-dark,8);
+$color-event: lighten($mim-dark,32);
+$color-image: lighten($mim-dark,16);
+$color-inspiration: lighten($mim-dark,42);
+$color-location: lighten($mim-dark,20);
+$color-movie: lighten($mim-dark,28);
+$color-person: lighten($mim-dark,24);
+$color-technique: lighten($mim-dark,36);
+
+
+$types: audio $color-audio, composer $color-composer, composition $color-composition, event $color-event, image $color-image, inspiration $color-inspiration, location $color-location, movie $color-movie, person $color-person, technique $color-technique;
+
+/* background colors */
+
+@each $type in $types {
+    .color.type-#{nth($type, 1)}, .type-#{nth($type, 1)} .color {
+        background-color: nth($type, 2);
+        fill: nth($type, 2);
+    }
+}
+
+
+@each $type in $types {
+    .color-alt.type-#{nth($type, 1)}, .type-#{nth($type, 1)} .color-alt {
+        background-color: darken(nth($type, 2), $alt-factor);
+        fill: darken(nth($type, 2), $alt-factor);
+    }
+}
+
+/* icons */
+@each $type in $types {
+    .icon.type-#{nth($type, 1)}){
+        background-image: url(../public/images/types/icon-#{nth($type, 1)}.png);
+    }
+}
+
+
+
+/* Here you can add specific colors for unique entity ids */
+
+$color-composer1: #31409a; // Serocki
+$color-composer2: #9d2059; // Pärt
+$color-composer3: #d94b25; // Andriessen
+$color-composer4: #91a012; // Boulez
+
+
+$composers: composer-kazimierz-serocki $color-composer1, composer-arvo-part $color-composer2, composer-louis-andriessen $color-composer3, composer-pierre-boulez $color-composer4;
+
+/* composer colors */
+
+@each $composer in $composers {
+
+    // composer
+    #node-#{nth($composer, 1)}, .node-#{nth($composer, 1)}{
+        &.color, .color{
+          background-color: nth($composer, 2);
+          fill: nth($composer, 2);
+        }
+         &.color-alt, .color-alt{
+          background-color: darken(nth($composer, 2), $alt-factor);
+          fill: darken(nth($composer, 2), $alt-factor);
+        }
+    }
+
+    // composition
+    .node-influence-#{nth($composer, 1)} {
+        &.color, .color{
+          background-color: darken(nth($composer, 2), $alt-factor);
+          fill: darken(nth($composer, 2), $alt-factor);
+        }
+        &.color-alt, .color-alt{
+          background-color: darken(nth($composer, 2), 2 * $alt-factor);
+          fill: darken(nth($composer, 2), 2 * $alt-factor);
+        }
+    }
+}
+
+
+
+

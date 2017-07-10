@@ -1,0 +1,148 @@
+@import "types";
+
+.App{
+  display: block;
+  position: relative;
+  background-color: #f0f0f0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Lato", "Roboto condensed",sans;
+  font-weight: 400;
+  font-size: 14px;
+
+
+  h1{
+    font-size: 1.9em;
+    line-height: 40px;
+  }
+
+  h2{
+    font-size: 1.1em;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0.5em;
+
+  }
+
+
+  .icon-button{
+    cursor: pointer;
+    width: 46px;
+    height: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.2 ease-out;
+    opacity: 0.7;
+    padding: 30px 5px 4px 5px;
+    background-position: top;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    user-select: none;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+
+    &:hover{
+      opacity: 1.0;
+    }
+
+    &.inactive{
+      cursor: default;
+      opacity: 0.3;
+    }
+  }
+
+
+  .icon-button{
+
+  }
+
+
+  .steps{
+    position:absolute;
+    top: 0;
+    right: 0;
+    .prev{
+      background-image: url(#{$IMAGE_HOST}/icon-left.svg);
+      background-size: 35px;
+    }
+
+    .next{
+      background-image: url(#{$IMAGE_HOST}/icon-right.svg);
+      background-size: 35px;
+    }
+
+    .home{
+      background-image: url(#{$IMAGE_HOST}/icon-home.svg);
+      background-size: 28px;
+      background-position: center 3px;
+    }
+
+  }
+
+  .help-button{
+    background-image: url(#{$IMAGE_HOST}/icon-help.svg);
+    background-size: 28px;
+    background-position: center 3px;
+    position:absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 50px;
+  }
+
+  .close-help-button{
+    background-image: url(#{$IMAGE_HOST}/icon-close.svg);
+    background-size: 35px;
+    position:absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 50px;
+  }
+
+
+  .toggle-panel{
+    display: none;
+    @media (max-width: 768px) {
+      display:block;
+    }
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: background 0.2s ease-out;
+    background-image: url(#{$IMAGE_HOST}/icon-info.svg);
+    background-size: 35px;
+    &.close{
+      background-image: url(#{$IMAGE_HOST}/icon-close.svg);
+    }
+  }
+
+
+  .panel-transition, .help-transition{
+    // react-css-transition-replace
+    .fade-wait-leave {
+      opacity: 1;
+    }
+    .fade-wait-leave.fade-wait-leave-active {
+      opacity: 0;
+      transition: opacity .2s ease-in;
+    }
+
+    .fade-wait-enter {
+      opacity: 0;
+    }
+    .fade-wait-enter.fade-wait-enter-active {
+      opacity: 1;
+      /* Delay the enter animation until the leave completes */
+      transition: opacity .2s ease-in .2s;
+    }
+
+    .fade-wait-height {
+      transition: height .2s ease-in-out;
+    }
+  }
+}

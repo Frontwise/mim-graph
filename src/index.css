@@ -1,0 +1,440 @@
+.mim-graph {
+  /* background colors */
+  /* icons */
+  /* composer colors */ }
+  .mim-graph .color.type-audio, .mim-graph .type-audio .color {
+    background-color: #1f1f1f;
+    fill: #1f1f1f; }
+  .mim-graph .color.type-composer, .mim-graph .type-composer .color {
+    background-color: #0a0a0a;
+    fill: #0a0a0a; }
+  .mim-graph .color.type-composition, .mim-graph .type-composition .color {
+    background-color: #141414;
+    fill: #141414; }
+  .mim-graph .color.type-event, .mim-graph .type-event .color {
+    background-color: #525252;
+    fill: #525252; }
+  .mim-graph .color.type-image, .mim-graph .type-image .color {
+    background-color: #292929;
+    fill: #292929; }
+  .mim-graph .color.type-inspiration, .mim-graph .type-inspiration .color {
+    background-color: #6b6b6b;
+    fill: #6b6b6b; }
+  .mim-graph .color.type-location, .mim-graph .type-location .color {
+    background-color: #333333;
+    fill: #333333; }
+  .mim-graph .color.type-movie, .mim-graph .type-movie .color {
+    background-color: #474747;
+    fill: #474747; }
+  .mim-graph .color.type-person, .mim-graph .type-person .color {
+    background-color: #3d3d3d;
+    fill: #3d3d3d; }
+  .mim-graph .color.type-technique, .mim-graph .type-technique .color {
+    background-color: #5c5c5c;
+    fill: #5c5c5c; }
+  .mim-graph .color-alt.type-audio, .mim-graph .type-audio .color-alt {
+    background-color: #050505;
+    fill: #050505; }
+  .mim-graph .color-alt.type-composer, .mim-graph .type-composer .color-alt {
+    background-color: black;
+    fill: black; }
+  .mim-graph .color-alt.type-composition, .mim-graph .type-composition .color-alt {
+    background-color: black;
+    fill: black; }
+  .mim-graph .color-alt.type-event, .mim-graph .type-event .color-alt {
+    background-color: #383838;
+    fill: #383838; }
+  .mim-graph .color-alt.type-image, .mim-graph .type-image .color-alt {
+    background-color: #0f0f0f;
+    fill: #0f0f0f; }
+  .mim-graph .color-alt.type-inspiration, .mim-graph .type-inspiration .color-alt {
+    background-color: #525252;
+    fill: #525252; }
+  .mim-graph .color-alt.type-location, .mim-graph .type-location .color-alt {
+    background-color: #1a1a1a;
+    fill: #1a1a1a; }
+  .mim-graph .color-alt.type-movie, .mim-graph .type-movie .color-alt {
+    background-color: #2e2e2e;
+    fill: #2e2e2e; }
+  .mim-graph .color-alt.type-person, .mim-graph .type-person .color-alt {
+    background-color: #242424;
+    fill: #242424; }
+  .mim-graph .color-alt.type-technique, .mim-graph .type-technique .color-alt {
+    background-color: #424242;
+    fill: #424242; }
+  .mim-graph .icon.type-audio {
+    background-image: url(../public/images/types/icon-audio.png); }
+  .mim-graph .icon.type-composer {
+    background-image: url(../public/images/types/icon-composer.png); }
+  .mim-graph .icon.type-composition {
+    background-image: url(../public/images/types/icon-composition.png); }
+  .mim-graph .icon.type-event {
+    background-image: url(../public/images/types/icon-event.png); }
+  .mim-graph .icon.type-image {
+    background-image: url(../public/images/types/icon-image.png); }
+  .mim-graph .icon.type-inspiration {
+    background-image: url(../public/images/types/icon-inspiration.png); }
+  .mim-graph .icon.type-location {
+    background-image: url(../public/images/types/icon-location.png); }
+  .mim-graph .icon.type-movie {
+    background-image: url(../public/images/types/icon-movie.png); }
+  .mim-graph .icon.type-person {
+    background-image: url(../public/images/types/icon-person.png); }
+  .mim-graph .icon.type-technique {
+    background-image: url(../public/images/types/icon-technique.png); }
+  .mim-graph #node-composer-kazimierz-serocki.color, .mim-graph #node-composer-kazimierz-serocki .color, .mim-graph .node-composer-kazimierz-serocki.color, .mim-graph .node-composer-kazimierz-serocki .color {
+    background-color: #31409a;
+    fill: #31409a; }
+  .mim-graph #node-composer-kazimierz-serocki.color-alt, .mim-graph #node-composer-kazimierz-serocki .color-alt, .mim-graph .node-composer-kazimierz-serocki.color-alt, .mim-graph .node-composer-kazimierz-serocki .color-alt {
+    background-color: #253073;
+    fill: #253073; }
+  .mim-graph .node-influence-composer-kazimierz-serocki.color, .mim-graph .node-influence-composer-kazimierz-serocki .color {
+    background-color: #253073;
+    fill: #253073; }
+  .mim-graph .node-influence-composer-kazimierz-serocki.color-alt, .mim-graph .node-influence-composer-kazimierz-serocki .color-alt {
+    background-color: #18204d;
+    fill: #18204d; }
+  .mim-graph #node-composer-arvo-part.color, .mim-graph #node-composer-arvo-part .color, .mim-graph .node-composer-arvo-part.color, .mim-graph .node-composer-arvo-part .color {
+    background-color: #9d2059;
+    fill: #9d2059; }
+  .mim-graph #node-composer-arvo-part.color-alt, .mim-graph #node-composer-arvo-part .color-alt, .mim-graph .node-composer-arvo-part.color-alt, .mim-graph .node-composer-arvo-part .color-alt {
+    background-color: #731741;
+    fill: #731741; }
+  .mim-graph .node-influence-composer-arvo-part.color, .mim-graph .node-influence-composer-arvo-part .color {
+    background-color: #731741;
+    fill: #731741; }
+  .mim-graph .node-influence-composer-arvo-part.color-alt, .mim-graph .node-influence-composer-arvo-part .color-alt {
+    background-color: #480f29;
+    fill: #480f29; }
+  .mim-graph #node-composer-louis-andriessen.color, .mim-graph #node-composer-louis-andriessen .color, .mim-graph .node-composer-louis-andriessen.color, .mim-graph .node-composer-louis-andriessen .color {
+    background-color: #d94b25;
+    fill: #d94b25; }
+  .mim-graph #node-composer-louis-andriessen.color-alt, .mim-graph #node-composer-louis-andriessen .color-alt, .mim-graph .node-composer-louis-andriessen.color-alt, .mim-graph .node-composer-louis-andriessen .color-alt {
+    background-color: #ad3c1e;
+    fill: #ad3c1e; }
+  .mim-graph .node-influence-composer-louis-andriessen.color, .mim-graph .node-influence-composer-louis-andriessen .color {
+    background-color: #ad3c1e;
+    fill: #ad3c1e; }
+  .mim-graph .node-influence-composer-louis-andriessen.color-alt, .mim-graph .node-influence-composer-louis-andriessen .color-alt {
+    background-color: #822d16;
+    fill: #822d16; }
+  .mim-graph #node-composer-pierre-boulez.color, .mim-graph #node-composer-pierre-boulez .color, .mim-graph .node-composer-pierre-boulez.color, .mim-graph .node-composer-pierre-boulez .color {
+    background-color: #91a012;
+    fill: #91a012; }
+  .mim-graph #node-composer-pierre-boulez.color-alt, .mim-graph #node-composer-pierre-boulez .color-alt, .mim-graph .node-composer-pierre-boulez.color-alt, .mim-graph .node-composer-pierre-boulez .color-alt {
+    background-color: #67720d;
+    fill: #67720d; }
+  .mim-graph .node-influence-composer-pierre-boulez.color, .mim-graph .node-influence-composer-pierre-boulez .color {
+    background-color: #67720d;
+    fill: #67720d; }
+  .mim-graph .node-influence-composer-pierre-boulez.color-alt, .mim-graph .node-influence-composer-pierre-boulez .color-alt {
+    background-color: #3e4408;
+    fill: #3e4408; }
+  .mim-graph .App {
+    display: block;
+    position: relative;
+    background-color: #f0f0f0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "Lato", "Roboto condensed",sans;
+    font-weight: 400;
+    font-size: 14px; }
+    .mim-graph .App h1 {
+      font-size: 1.9em;
+      line-height: 40px; }
+    .mim-graph .App h2 {
+      font-size: 1.1em;
+      line-height: 25px;
+      text-transform: uppercase;
+      font-weight: normal;
+      letter-spacing: 0.5em; }
+    .mim-graph .App .icon-button {
+      cursor: pointer;
+      width: 46px;
+      height: 40px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: opacity 0.2 ease-out;
+      opacity: 0.7;
+      padding: 30px 5px 4px 5px;
+      background-position: top;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      user-select: none;
+      text-align: center;
+      box-sizing: border-box;
+      text-transform: uppercase; }
+      .mim-graph .App .icon-button:hover {
+        opacity: 1.0; }
+      .mim-graph .App .icon-button.inactive {
+        cursor: default;
+        opacity: 0.3; }
+    .mim-graph .App .steps {
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .mim-graph .App .steps .prev {
+        background-image: url(/images/icon-left.svg);
+        background-size: 35px; }
+      .mim-graph .App .steps .next {
+        background-image: url(/images/icon-right.svg);
+        background-size: 35px; }
+      .mim-graph .App .steps .home {
+        background-image: url(/images/icon-home.svg);
+        background-size: 28px;
+        background-position: center 3px; }
+    .mim-graph .App .help-button {
+      background-image: url(/images/icon-help.svg);
+      background-size: 28px;
+      background-position: center 3px;
+      position: absolute;
+      bottom: 10px;
+      right: 0px;
+      width: 50px; }
+    .mim-graph .App .close-help-button {
+      background-image: url(/images/icon-close.svg);
+      background-size: 35px;
+      position: absolute;
+      bottom: 10px;
+      right: 0px;
+      width: 50px; }
+    .mim-graph .App .toggle-panel {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: background 0.2s ease-out;
+      background-image: url(/images/icon-info.svg);
+      background-size: 35px; }
+      @media (max-width: 768px) {
+        .mim-graph .App .toggle-panel {
+          display: block; } }
+      .mim-graph .App .toggle-panel.close {
+        background-image: url(/images/icon-close.svg); }
+    .mim-graph .App .panel-transition .fade-wait-leave, .mim-graph .App .help-transition .fade-wait-leave {
+      opacity: 1; }
+    .mim-graph .App .panel-transition .fade-wait-leave.fade-wait-leave-active, .mim-graph .App .help-transition .fade-wait-leave.fade-wait-leave-active {
+      opacity: 0;
+      transition: opacity .2s ease-in; }
+    .mim-graph .App .panel-transition .fade-wait-enter, .mim-graph .App .help-transition .fade-wait-enter {
+      opacity: 0; }
+    .mim-graph .App .panel-transition .fade-wait-enter.fade-wait-enter-active, .mim-graph .App .help-transition .fade-wait-enter.fade-wait-enter-active {
+      opacity: 1;
+      /* Delay the enter animation until the leave completes */
+      transition: opacity .2s ease-in .2s; }
+    .mim-graph .App .panel-transition .fade-wait-height, .mim-graph .App .help-transition .fade-wait-height {
+      transition: height .2s ease-in-out; }
+  .mim-graph .help {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); }
+    .mim-graph .help h1 {
+      margin-top: 0; }
+    .mim-graph .help .container {
+      max-width: 1150px;
+      margin: auto; }
+    .mim-graph .help ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 0;
+      padding: 0; }
+      .mim-graph .help ul li {
+        margin: 0 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        min-width: 250px; }
+        @media (max-width: 768px) {
+          .mim-graph .help ul li {
+            width: 100%; } }
+        .mim-graph .help ul li.full {
+          width: 100%;
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 10px;
+          padding: 20px; }
+          .mim-graph .help ul li.full.last {
+            border-bottom: 0; }
+        .mim-graph .help ul li.icon {
+          text-align: center;
+          margin-bottom: 30px;
+          padding: 20px 0; }
+          @media (max-width: 768px) {
+            .mim-graph .help ul li.icon {
+              text-align: left;
+              margin: 0; }
+              .mim-graph .help ul li.icon h2 {
+                line-height: 80px;
+                padding: 0;
+                margin: 0; } }
+          .mim-graph .help ul li.icon div.icon {
+            vertical-align: middle;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center; }
+            @media (max-width: 768px) {
+              .mim-graph .help ul li.icon div.icon {
+                float: left;
+                margin-right: 20px; } }
+        .mim-graph .help ul li video {
+          width: 100%;
+          height: auto;
+          max-height: 100%; }
+        .mim-graph .help ul li ul.tips {
+          list-style: circle outside;
+          display: block; }
+          .mim-graph .help ul li ul.tips li {
+            margin: 0;
+            margin-left: 10px;
+            padding: 10px 10px; }
+  .mim-graph .Panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    max-height: 100%;
+    min-width: 280px;
+    max-width: 400px;
+    width: 33%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9); }
+    .mim-graph .Panel .image {
+      position: relative;
+      margin: 0 auto;
+      width: 250px;
+      margin-top: 30px; }
+      .mim-graph .Panel .image .thumbnail {
+        height: 250px;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #eee;
+        border: 1px solid #ddd; }
+      .mim-graph .Panel .image .icon {
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        margin: 0 auto;
+        transition: all 0.2s ease-out; }
+        .mim-graph .Panel .image .icon.float {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          width: 75px;
+          height: 75px; }
+    .mim-graph .Panel audio {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box; }
+    .mim-graph .Panel h1 {
+      margin-top: 15px;
+      text-align: center;
+      margin-bottom: 5px; }
+    .mim-graph .Panel h2 {
+      margin-top: 5px;
+      text-align: center;
+      margin-bottom: 10px; }
+    .mim-graph .Panel ul, .mim-graph .Panel p {
+      margin: 0;
+      padding: 10px 25px;
+      line-height: 1.4em;
+      list-style: none; }
+    .mim-graph .Panel p.date {
+      padding-left: 20px;
+      margin-left: 25px;
+      background-image: url(/images/icon-date.svg);
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: 14px;
+      color: #444;
+      font-size: 0.9em; }
+    .mim-graph .Panel ul li {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+      .mim-graph .Panel ul li a {
+        color: #555;
+        cursor: pointer; }
+        .mim-graph .Panel ul li a:hover {
+          color: #222; }
+      .mim-graph .Panel ul li span, .mim-graph .Panel ul li a {
+        padding-left: 20px;
+        background-position: center left;
+        background-size: 15px;
+        background-repeat: no-repeat; }
+    .mim-graph .Panel .sources span {
+      background-image: url(/images/icon-quote.svg); }
+    .mim-graph .Panel .sources a {
+      background-image: url(/images/icon-link.svg); }
+    .mim-graph .Panel .copyright {
+      color: #bbb; }
+      .mim-graph .Panel .copyright span {
+        background-image: url(/images/icon-copyright-grey.svg); }
+    @media (max-width: 768px) {
+      .mim-graph .Panel {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding-top: 30px; } }
+  .mim-graph .View {
+    user-select: none;
+    cursor: default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden; }
+  .mim-graph .D3Graph {
+    max-height: 100%; }
+    .mim-graph .D3Graph .d3-links g line {
+      stroke: #99a;
+      stroke-opacity: 0.3; }
+    .mim-graph .D3Graph .d3-links g.hover line {
+      stroke-opacity: 0.8; }
+    .mim-graph .D3Graph .d3-links g circle {
+      fill: #777;
+      cursor: pointer; }
+      .mim-graph .D3Graph .d3-links g circle:hover {
+        fill: #000;
+        stroke: #000;
+        stroke-width: 2px; }
+    .mim-graph .D3Graph .d3-nodes g {
+      cursor: pointer; }
+    .mim-graph .D3Graph .d3-nodes text {
+      fill: white; }
+    .mim-graph .D3Graph .d3-nodes .contents {
+      transition: opacity 0.2 ease-out; }
+      .mim-graph .D3Graph .d3-nodes .contents .selector {
+        display: none; }
+      .mim-graph .D3Graph .d3-nodes .contents text {
+        font-weight: bold; }
+      .mim-graph .D3Graph .d3-nodes .contents.active .selector {
+        display: block; }
+    .mim-graph .D3Graph .d3-info {
+      box-shadow: 0 0 10px black; }
+      .mim-graph .D3Graph .d3-info text {
+        font-weight: bold;
+        fill: #bbb; }
+        .mim-graph .D3Graph .d3-info text .description {
+          fill: #fff; }
