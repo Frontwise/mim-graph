@@ -86,6 +86,8 @@ export default class MiMGraph {
 
     // get element height
     let height = parseInt(element.getAttribute('data-height'), 10);
+    // for now we maximize height
+    height = window.innerHeight;
     height = Math.min(height ? height: 800, bodyHeight - rect.top);
     element.style.height = height + 'px';
 
