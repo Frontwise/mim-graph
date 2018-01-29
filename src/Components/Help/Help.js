@@ -62,7 +62,7 @@ getTypeList(){
                     <h1>License</h1>
                     <p>
                        This visualization is developed by Frontwise for Sound & Vision within the context of the Music in Movement project.<br />
-                       It is licensed under the MIT license, and is available at GitHub: https://github.com/frontwise/mimgraph
+                       It is licensed under the MIT license, and is available at GitHub: <a href="https://github.com/frontwise/mim-graph">https://github.com/frontwise/mim-graph</a>
                     </p>
                   </li>
 
