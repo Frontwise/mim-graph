@@ -5,7 +5,7 @@ class Panel extends Component {
 
   checkMakeLink(data){
     if (data && typeof data === "string" && data.startsWith("http")){
-      return (<a href={data} target="_blank">{data}</a>)
+      return (<a href={data} rel="noopener noreferrer" target="_blank">{data}</a>)
     }
     return (<span>{data}</span>);
   }

@@ -1,6 +1,7 @@
 .mim-graph {
   /* background colors */
   /* icons */
+  /* Here you can add specific colors for unique entity ids */
   /* composer colors */ }
   .mim-graph .color.type-audio, .mim-graph .type-audio .color {
     background-color: #1f1f1f;
@@ -63,25 +64,25 @@
     background-color: #424242;
     fill: #424242; }
   .mim-graph .icon.type-audio {
-    background-image: url(../public/images/types/icon-audio.png); }
+    background-image: url(/images/types/icon-audio.png); }
   .mim-graph .icon.type-composer {
-    background-image: url(../public/images/types/icon-composer.png); }
+    background-image: url(/images/types/icon-composer.png); }
   .mim-graph .icon.type-composition {
-    background-image: url(../public/images/types/icon-composition.png); }
+    background-image: url(/images/types/icon-composition.png); }
   .mim-graph .icon.type-event {
-    background-image: url(../public/images/types/icon-event.png); }
+    background-image: url(/images/types/icon-event.png); }
   .mim-graph .icon.type-image {
-    background-image: url(../public/images/types/icon-image.png); }
+    background-image: url(/images/types/icon-image.png); }
   .mim-graph .icon.type-inspiration {
-    background-image: url(../public/images/types/icon-inspiration.png); }
+    background-image: url(/images/types/icon-inspiration.png); }
   .mim-graph .icon.type-location {
-    background-image: url(../public/images/types/icon-location.png); }
+    background-image: url(/images/types/icon-location.png); }
   .mim-graph .icon.type-movie {
-    background-image: url(../public/images/types/icon-movie.png); }
+    background-image: url(/images/types/icon-movie.png); }
   .mim-graph .icon.type-person {
-    background-image: url(../public/images/types/icon-person.png); }
+    background-image: url(/images/types/icon-person.png); }
   .mim-graph .icon.type-technique {
-    background-image: url(../public/images/types/icon-technique.png); }
+    background-image: url(/images/types/icon-technique.png); }
   .mim-graph #node-composer-kazimierz-serocki.color, .mim-graph #node-composer-kazimierz-serocki .color, .mim-graph .node-composer-kazimierz-serocki.color, .mim-graph .node-composer-kazimierz-serocki .color {
     background-color: #31409a;
     fill: #31409a; }
@@ -138,7 +139,7 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    font-family: "Lato", "Roboto condensed",sans;
+    font-family: "Lato", "Roboto condensed", sans;
     font-weight: 400;
     font-size: 14px; }
     .mim-graph .App h1 {
@@ -169,7 +170,7 @@
       box-sizing: border-box;
       text-transform: uppercase; }
       .mim-graph .App .icon-button:hover {
-        opacity: 1.0; }
+        opacity: 1; }
       .mim-graph .App .icon-button.inactive {
         cursor: default;
         opacity: 0.3; }
@@ -215,19 +216,24 @@
           display: block; } }
       .mim-graph .App .toggle-panel.close {
         background-image: url(/images/icon-close.svg); }
-    .mim-graph .App .panel-transition .fade-wait-leave, .mim-graph .App .help-transition .fade-wait-leave {
+    .mim-graph .App .panel-transition .fade-wait-exit,
+    .mim-graph .App .help-transition .fade-wait-exit {
       opacity: 1; }
-    .mim-graph .App .panel-transition .fade-wait-leave.fade-wait-leave-active, .mim-graph .App .help-transition .fade-wait-leave.fade-wait-leave-active {
+    .mim-graph .App .panel-transition .fade-wait-exit.fade-wait-exit-active,
+    .mim-graph .App .help-transition .fade-wait-exit.fade-wait-exit-active {
       opacity: 0;
-      transition: opacity .2s ease-in; }
-    .mim-graph .App .panel-transition .fade-wait-enter, .mim-graph .App .help-transition .fade-wait-enter {
+      transition: opacity 0.2s ease-in; }
+    .mim-graph .App .panel-transition .fade-wait-enter,
+    .mim-graph .App .help-transition .fade-wait-enter {
       opacity: 0; }
-    .mim-graph .App .panel-transition .fade-wait-enter.fade-wait-enter-active, .mim-graph .App .help-transition .fade-wait-enter.fade-wait-enter-active {
+    .mim-graph .App .panel-transition .fade-wait-enter.fade-wait-enter-active,
+    .mim-graph .App .help-transition .fade-wait-enter.fade-wait-enter-active {
       opacity: 1;
-      /* Delay the enter animation until the leave completes */
-      transition: opacity .2s ease-in .2s; }
-    .mim-graph .App .panel-transition .fade-wait-height, .mim-graph .App .help-transition .fade-wait-height {
-      transition: height .2s ease-in-out; }
+      /* Delay the enter animation until the exit completes */
+      transition: opacity 0.2s ease-out 0.2s; }
+    .mim-graph .App .panel-transition .fade-wait-height,
+    .mim-graph .App .help-transition .fade-wait-height {
+      transition: height 0.2s ease-in-out; }
   .mim-graph .help {
     position: absolute;
     left: 0;

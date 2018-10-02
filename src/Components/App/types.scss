@@ -36,7 +36,7 @@ $types: audio $color-audio, composer $color-composer, composition $color-composi
 /* icons */
 @each $type in $types {
     .icon.type-#{nth($type, 1)}){
-        background-image: url(../public/images/types/icon-#{nth($type, 1)}.png);
+        background-image: url(/images/types/icon-#{nth($type, 1)}.png);
     }
 }
 
