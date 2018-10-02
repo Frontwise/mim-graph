@@ -104,20 +104,20 @@ class App extends Component {
   }
 
   // go 1 step back
-  historyPrev() {
+  historyPrev = () => {
     let nodeId = this.state.graph.historyPrev();
     if (nodeId !== false) {
       this.setActiveNodeId(nodeId, false);
     }
-  }
+  };
 
   // go 1 step forward
-  historyNext() {
+  historyNext = () => {
     let nodeId = this.state.graph.historyNext();
     if (nodeId !== false) {
       this.setActiveNodeId(nodeId, false);
     }
-  }
+  };
 
   // set active link id in the graph and update the state
   setActiveLinkId(id) {
@@ -161,9 +161,9 @@ class App extends Component {
   }
 
   // toggle Panel active
-  togglePanelActive() {
+  togglePanelActive = () => {
     this.setPanelActive(!this.state.panelActive);
-  }
+  };
 
   // set Help inactive
   setHelpActive(helpActive) {
@@ -231,7 +231,7 @@ class App extends Component {
               "prev icon-button",
               graph.hasPrev() ? "" : "inactive"
             ].join(" ")}
-            onClick={this.historyPrev.bind(this)}
+            onClick={this.historyPrev}
           >
             PREV
           </div>
@@ -243,7 +243,7 @@ class App extends Component {
               "next icon-button",
               graph.hasNext() ? "" : "inactive"
             ].join(" ")}
-            onClick={this.historyNext.bind(this)}
+            onClick={this.historyNext}
           >
             NEXT
           </div>
@@ -267,7 +267,7 @@ class App extends Component {
               "toggle-panel icon-button",
               this.state.panelActive ? "close" : null
             ].join(" ")}
-            onClick={this.togglePanelActive.bind(this)}
+            onClick={this.togglePanelActive}
           >
             {this.state.panelActive ? "CLOSE" : "INFO"}
           </div>
